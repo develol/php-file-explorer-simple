@@ -38,7 +38,7 @@
 ├─ css ....................... Folder with CSS files
 │  └─ index.css .............. Main CSS file
 ├─ js ........................ Folder with JavaScript files
-│  └─ index.css .............. Main JS file
+│  └─ index.js ............... Main JS file
 ├─ lib ....................... Folder with PHP classes
 │  ├─ handlerDirectory.php ... File with a class for working with directories
 │  ├─ handlerFile.php ........ File with a class for working with files
