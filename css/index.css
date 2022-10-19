@@ -1,0 +1,45 @@
+body{
+    margin: 1%;
+}
+.tdBtn{
+    text-align: center;
+}
+.tdHr{
+    margin: 0px;
+}
+.aBack{
+    text-decoration: none;
+}
+.tdName{
+    max-width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 0.2em;
+    margin-right: 1em;
+}
+.menuBtn{
+    margin: 0.33em;
+    margin: 0.5em;
+    font-weight: bold;
+}
+input[type=button]{
+    cursor: pointer;
+}
+input{
+    font-size: 1em;
+}
+.editorInp{
+    margin: 1%;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+.loginInput{
+    width: 10em; 
+    margin: 0.2em;
+}
