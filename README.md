@@ -16,6 +16,7 @@
   ];
 ?>              
 ```
+
 ## Overview of functions
 - Authorization
   - Creating a file and Upload file
@@ -28,3 +29,23 @@
     - Open in browser
     - Deleting a directory
     - Downloading directory
+    
+## File structure
+```
+/ ............................ Root
+├─ index.php ................. Main PHP file
+├─ configuration.php ......... File with configuration
+├─ css ....................... Folder with CSS files
+│  └─ index.css .............. Main CSS file
+├─ js ........................ Folder with JavaScript files
+│  └─ index.css .............. Main JS file
+├─ lib ....................... Folder with PHP classes
+│  ├─ handlerDirectory.php ... File with a class for working with directories
+│  ├─ handlerFile.php ........ File with a class for working with files
+│  ├─ initialization.php ..... File with class for first initialization
+│  └─ userInterface.php ...... File with a class for working with users components
+├─ temp ...................... Folder with temporary files
+│  └─ .
+└─ dir ....................... Folder with explorer files and folders
+   └─ . 
+```
