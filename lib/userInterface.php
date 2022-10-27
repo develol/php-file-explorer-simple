@@ -19,7 +19,7 @@
 
         function login(){
             $result="
-                <form action=\"/\" method=\"POST\">
+                <form action=\"\" method=\"POST\">
                     <input class=\"loginInput\" name=\"userName\" placeholder=\"User name...\"/>
                     <br>
                     <input class=\"loginInput\" name=\"password\" type=\"password\" placeholder=\"Password...\"/>
@@ -126,7 +126,7 @@
                             $result.="<input type=\"button\" value=\"Download\" onclick=\"window.open('?dwld=/dir".urlencode($dir["link"])."');\"\>";
                         $result.="</td>";
                         $result.="<td class=\"tdBtn\">";
-                            $result.="<input type=\"button\" value=\"View\" onclick=\"window.open('/dir".$dir["link"]."');\" \>";
+                            $result.="<input type=\"button\" value=\"View\" onclick=\"window.open('dir".$dir["link"]."');\" \>";
                         $result.="</td>";	
                         $result.="<td class=\"tdBtn\">";
                             $result.="<input type=\"button\" value=\"Delete\" onclick=\"deleteFile('".$root."', '".$dir["name"]."');\"\>";
@@ -140,7 +140,7 @@
                             $result.="<input type=\"button\" value=\"Download\" onclick=\"dwldDirectory('".$root."', '".$dir["name"]."')\" \>";
                         $result.="</td>";
                         $result.="<td class=\"tdBtn\">";
-                            $result.="<input type=\"button\" value=\"View\" onclick=\"window.open('/dir".$dir["link"]."');\"\>";
+                            $result.="<input type=\"button\" value=\"View\" onclick=\"window.open('dir".$dir["link"]."');\"\>";
                         $result.="</td>";	
                         $result.="<td class=\"tdBtn\">";
                             $result.="<input type=\"button\" value=\"Delete\" onclick=\"deleteDirectory('".$root."', '".$dir["name"]."');\"\>";

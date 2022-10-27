@@ -57,7 +57,7 @@ function editFile(link, fileName){
 
 function saveFile(link, fileName){
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/', true);
+    xhr.open('POST', 'index.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send(
         'link='+encodeURIComponent(link)+

@@ -60,16 +60,17 @@
     
     
         function saveFile($link, $fileName, $text){
-            file_put_contents("./dir".$link."/".$fileName, $text);
+            file_put_contents("dir/".$link."/".$fileName, $text);
             header("Location: ?link=".urlencode($link));
         }
     
         function directoryToZip($link, $dirName){
             $zip = new ZipArchive();
-            $aLink="./temp/".$dirName.".zip";
+            $aLink="dir/".$dirName.".zip";
             $zip->open($aLink, ZipArchive::CREATE|ZipArchive::OVERWRITE);
             $this->addFileRecursion($zip, "./dir".$link."/".$dirName);
             $zip->close();
+            
             $this->downloadFile($aLink, $dirName."_".date("Y_m_d_H_i_s").".zip");
             header("Location: ?link=".urlencode($link));
         }
