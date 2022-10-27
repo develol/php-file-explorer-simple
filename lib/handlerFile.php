@@ -66,7 +66,7 @@
     
         function directoryToZip($link, $dirName){
             $zip = new ZipArchive();
-            $aLink="dir/".$dirName.".zip";
+            $aLink="dir/_temp/".$dirName.".zip";
             $zip->open($aLink, ZipArchive::CREATE|ZipArchive::OVERWRITE);
             $this->addFileRecursion($zip, "./dir".$link."/".$dirName);
             $zip->close();

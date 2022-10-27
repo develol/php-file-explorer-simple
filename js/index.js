@@ -1,3 +1,5 @@
+let lastTitle = "";
+
 function createDirectory(link){
     let dname = prompt('Enter the name of the directory (only ASCII):');
     if(dname!=null)
@@ -41,18 +43,21 @@ function getFileText(link){
 }
 
 function closeEditor(){
-    document.getElementById('taEditor').innerHTML = '';
+    editor.setValue("");
     document.getElementById('inpEditor').value = '';
     document.getElementById('divEditor').style.display = 'none';
     document.getElementById('saveEditorBtn').onclick = function() {};
+    document.getElementById('title').innerHTML=lastTitle;
 }
 
 function editFile(link, fileName){
+    lastTitle = document.getElementById('title').innerHTML;
     closeEditor();
     getFileText('?dwld=/dir'+link+'/'+fileName);
     document.getElementById('inpEditor').value = fileName;
     document.getElementById('divEditor').style.display = 'block';
     document.getElementById('saveEditorBtn').onclick = function() { saveFile(link, fileName); };
+    document.getElementById('title').innerHTML=fileName;
 }
 
 function saveFile(link, fileName){
